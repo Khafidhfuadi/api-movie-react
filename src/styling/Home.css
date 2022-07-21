@@ -1,0 +1,7 @@
+:root {
+    --blueDark: #131927;
+}
+
+body {
+    background-color: var(--blueDark);
+}
