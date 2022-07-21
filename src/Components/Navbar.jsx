@@ -5,7 +5,7 @@ export default function NavBar() {
 
   return (
     <nav className="w-full #1a1c2d shadow">
-      ini navbar
+      navbar yg baru cuy
     </nav>
   );
 }
