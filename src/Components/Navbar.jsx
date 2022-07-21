@@ -57,13 +57,13 @@ export default function NavBar() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-white hover:text-indigo-200">
-                <a href="javascript:void(0)">Home</a>
+                <a href="javascript:void(0)">Serial</a>
               </li>
               <li className="text-white hover:text-indigo-200">
-                <a href="javascript:void(0)">Blog</a>
+                <a href="javascript:void(0)">Film</a>
               </li>
               <li className="text-white hover:text-indigo-200">
-                <a href="javascript:void(0)">About US</a>
+                <a href="javascript:void(0)">Negara</a>
               </li>
               <li className="text-white hover:text-indigo-200">
                 <a href="javascript:void(0)">Contact US</a>

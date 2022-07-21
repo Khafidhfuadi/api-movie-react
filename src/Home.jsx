@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import NavBar from "./Components/Navbar";
-import MovieRecom from "./Components/MovieRecom";
+import TopSec from "./Components/TopSection";
 
 class Home extends React.Component {
   render() {
     return (
       <div>
         <NavBar />
-        <MovieRecom />
+        <TopSec />
       </div>
     );
   }
