@@ -12,7 +12,7 @@ const TopSection = () => {
       url: url,
     }).then(function (response) {
       setMovies(response.data);
-      console.log("POPULAR MOVIES", response.data);
+      console.log("POPULAR MOVIES", movies);
     });
   };
 
