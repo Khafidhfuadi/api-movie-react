@@ -1,28 +1,21 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 
-function TopApi() {
+const baseURL = `https://api.themoviedb.org/3/movie/popular?api_key=31a6b18e67bfaf12776d9a9e364d02a5`;
+
+const TopApi = () => {
   const [movies, setMovies] = useState([]);
 
-  const getMovieRequest = async () => {
-    const url = `https://api.themoviedb.org/3/movie/popular?api_key=31a6b18e67bfaf12776d9a9e364d02a5`;
-
-    axios({
-      method: "get",
-      url: url,
-    }).then(function (response) {
-      setMovies(response.data);
-      console.log("POPULAR MOVIES", movies);
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setMovies(response.data.results);
+      console.log(response.data.results);
     });
-  };
-
-  useEffect(() => {
-    getMovieRequest();
   }, []);
 
   return (
     <div className="container-fluid movie-app">
-      <div className="row">{/* <MovieList movies={movies} /> */}</div>
+      <div className="row">{movies[0]?.original_title}</div>
     </div>
   );
 };
