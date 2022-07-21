@@ -1,0 +1,13 @@
+:root {
+    --blueDark: #131927;
+}
+
+.containerTopMovie {
+    display: flex;
+    column-gap: 13px;
+}
+
+.cardTopMovie {
+    width: 100px;
+    height: 100px;
+}
