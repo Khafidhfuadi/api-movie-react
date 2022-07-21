@@ -5,7 +5,7 @@ export default function NavBar() {
 
   return (
     <nav className="w-full #1a1c2d shadow">
-      navbar yg baru cuy
+      navbar yg terbaru
     </nav>
   );
 }
