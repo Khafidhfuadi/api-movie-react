@@ -1,17 +1,19 @@
+import axios from "axios";
 import React, { useState, useEffect } from "react";
 
 const TopSection = () => {
   const [movies, setMovies] = useState([]);
 
   const getMovieRequest = async () => {
-    const url = `http://www.omdbapi.com/?s=star-wars&apikey=8a08a7b9`;
+    const url = `https://api.themoviedb.org/3/movie/popular?api_key=31a6b18e67bfaf12776d9a9e364d02a5`;
 
-    const response = await fetch(url);
-    const responseJson = await response.json();
-
-    if (responseJson.Search) {
-      setMovies(responseJson.Search);
-    }
+    axios({
+      method: "get",
+      url: url,
+    }).then(function (response) {
+      setMovies(response.data);
+      console.log("POPULAR MOVIES", response.data);
+    });
   };
 
   useEffect(() => {
@@ -20,9 +22,7 @@ const TopSection = () => {
 
   return (
     <div className="container-fluid movie-app">
-      <div className="row">
-        <MovieList movies={movies} />
-      </div>
+      <div className="row">{/* <MovieList movies={movies} /> */}</div>
     </div>
   );
 };
