@@ -1,6 +1,12 @@
 import { useState } from "react";
-
-export default function NavBar() {
-  const [navbar, setNavbar] = useState(false);
-  return <nav className="w-full #1a1c2d shadow">navbar pull</nav>;
+import "../styling/NavBar.css"
+function NavBar() {
+  return (
+    <div>
+      <nav>
+        <input type="text" className="search" placeholder="search" />
+      </nav>
+    </div>
+  )
 }
+export default NavBar;

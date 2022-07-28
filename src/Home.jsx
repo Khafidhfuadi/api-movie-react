@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "./Components/Navbar";
-import TopSec from "./Components/TopApi";
+import TopMovie from "./Components/TopMovie"
 import "./styling/Home.css"
 
 class Home extends React.Component {
@@ -8,7 +8,7 @@ class Home extends React.Component {
     return (
       <body>
         <NavBar />
-        <TopSec />
+        <TopMovie />
       </body>
     );
   }

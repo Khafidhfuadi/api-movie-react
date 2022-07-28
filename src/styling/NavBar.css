@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+nav {
+    padding-top: 30px;
+    justify-content: end;
+    display: flex;
+}
+
+.search {
+    color: white;
+    background-color: transparent;
+    border: none;
+    width: 100px;
+    transition: 800ms;
+    border-bottom: 2px solid white;
+}
+
+.search:focus {
+    transition: width 1s ease-in-out;
+    width: 300px;
+    border-bottom: 2px solid rgb(218, 176, 62);
+    outline: none;
+}
